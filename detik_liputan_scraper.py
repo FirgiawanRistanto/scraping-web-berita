@@ -66,7 +66,7 @@ def get_detik_articles(url, count=25):
                         'waktu': waktu,
                         'scraped_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                     })
-                    time.sleep(0.5) # Politeness delay
+                    time.sleep(1) # Politeness delay
         page += 1
     return articles
 
@@ -154,6 +154,7 @@ def get_liputan6_articles(url, count=25):
                     'waktu': waktu,
                     'scraped_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                 })
+                time.sleep(1) # Politeness delay
         page += 1
     return articles
 
